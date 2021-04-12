@@ -1,0 +1,17 @@
+cd_spotify.spotify_api_form:
+  path: '/admin/config/spotify-api'
+  defaults:
+    _form: '\Drupal\cd_spotify\Form\SpotifyAPIForm'
+    _title: 'Spotify API'
+  requirements:
+    _permission: 'manage spotify api configuration'
+  options:
+    _admin_route: TRUE
+
+cd_spotify.spotify_artist:
+  path: '/artist/{artist}'
+  defaults:
+    _controller: '\Drupal\cd_spotify\Controller\SpotifyArtistController::showArtist'
+    _title_callback: '\Drupal\cd_spotify\Controller\SpotifyArtistController::getTitle'
+  requirements:
+    _permission: 'view spotify artist page'

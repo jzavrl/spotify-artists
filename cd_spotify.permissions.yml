@@ -1,0 +1,7 @@
+manage spotify api configuration:
+  title: 'Manage Spotify API configuration'
+  description: 'Allow access to the Spotify API management form and settings.'
+
+view spotify artist page:
+  title: 'View Spotify artist page'
+  description: 'Allow access to the page displaying Spotify artist details.'

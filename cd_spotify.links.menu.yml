@@ -1,0 +1,5 @@
+cd_spotify.spotify_api_configuration_form:
+  title: 'Spotify API'
+  route_name: cd_spotify.spotify_api_form
+  description: 'Configure the Spotify API settings.'
+  parent: system.admin_config_services

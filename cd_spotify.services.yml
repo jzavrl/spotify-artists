@@ -1,0 +1,7 @@
+services:
+  logger.channel.cd_spotify:
+    parent: logger.channel_base
+    arguments: ['cd_spotify']
+  cd_spotify.spotify_manager:
+    class: Drupal\cd_spotify\SpotifyManager
+    arguments: ['@http_client', '@config.manager', '@state', '@logger.factory']

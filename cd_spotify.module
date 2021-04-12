@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains cd_spotify.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function cd_spotify_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cd_spotify module.
+    case 'help.page.cd_spotify':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides integration with Spotify API to provide list of artists.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
